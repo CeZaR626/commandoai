@@ -14,7 +14,7 @@ const SolutionSection: React.FC = () => {
             <span className="gradient-text">Решение</span>
           </h2>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-700 dark:text-gray-300 leading-relaxed">
-            Система на базе Telegram и GPT-агентов
+            Система на базе Telegram и ИИ-агентов
           </p>
         </div>
         
