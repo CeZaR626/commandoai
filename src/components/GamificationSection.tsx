@@ -12,7 +12,7 @@ const TelegramChatInterface = () => {
           ШВ
         </div>
         <div className="ml-3">
-          <h3 className="text-white font-medium">Штаб Вкуса</h3>
+          <h3 className="text-white font-medium">Штаб</h3>
           <p className="text-gray-400 text-xs">Бот | Онлайн</p>
         </div>
       </div>
@@ -45,7 +45,7 @@ const TelegramChatInterface = () => {
         {/* User message */}
         <div className="flex items-end justify-end">
           <div className="bg-[#4992CC] text-white rounded-lg p-3 max-w-xs">
-            <p>Хорошо, сделаю завтра👍</p>
+            <p>Хорошо, сейчас сделаю👍</p>
           </div>
         </div>
         
