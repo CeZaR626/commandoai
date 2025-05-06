@@ -3,7 +3,7 @@ import React from 'react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 
-const TelegramChatInterface = () => {
+function TelegramChatInterface() {
   return (
     <div className="w-full max-w-md mx-auto bg-[#17212B] rounded-lg overflow-hidden shadow-xl">
       {/* Telegram header */}
@@ -16,7 +16,7 @@ const TelegramChatInterface = () => {
           <p className="text-gray-400 text-xs">Бот | Онлайн</p>
         </div>
       </div>
-      
+
       {/* Chat messages */}
       <div className="p-4 space-y-4 h-72 overflow-y-auto bg-[#0E1621]">
         {/* Bot message */}
@@ -25,14 +25,14 @@ const TelegramChatInterface = () => {
             <p>Привет! Я AI-командир твоего магазина. Как прошла твоя смена сегодня?</p>
           </div>
         </div>
-        
+
         {/* User message */}
         <div className="flex items-end justify-end">
           <div className="bg-[#4992CC] text-white rounded-lg p-3 max-w-xs">
             <p>День был нормальный, но клиенты часто спрашивали про новинки, а я не знаю что отвечать</p>
           </div>
         </div>
-        
+
         {/* Bot message */}
         <div className="flex items-end">
           <div className="bg-[#242F3D] text-white rounded-lg p-3 max-w-xs">
@@ -41,14 +41,14 @@ const TelegramChatInterface = () => {
             <p>Изучи материалы о новинках, которые я отправил в общий чат. Попробуй рассказать о 3 ключевых продуктах хотя бы 5 клиентам.</p>
           </div>
         </div>
-        
+
         {/* User message */}
         <div className="flex items-end justify-end">
           <div className="bg-[#4992CC] text-white rounded-lg p-3 max-w-xs">
             <p>Хорошо, сейчас сделаю👍</p>
           </div>
         </div>
-        
+
         {/* Bot message - with reward phrase */}
         <div className="flex items-end">
           <div className="bg-[#242F3D] text-white rounded-lg p-3 max-w-xs">
@@ -58,19 +58,18 @@ const TelegramChatInterface = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Message input */}
       <div className="bg-[#17212B] p-4 flex">
-        <input 
-          type="text" 
-          placeholder="Сообщение..." 
+        <input
+          type="text"
+          placeholder="Сообщение..."
           className="flex-1 bg-[#242F3D] text-white rounded-lg px-4 py-2 focus:outline-none"
-          readOnly
-        />
+          readOnly />
         <button className="ml-2 w-10 h-10 rounded-full bg-[#4992CC] flex items-center justify-center">
-          <svg 
-            className="w-5 h-5 text-white" 
-            fill="currentColor" 
+          <svg
+            className="w-5 h-5 text-white"
+            fill="currentColor"
             viewBox="0 0 20 20"
           >
             <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path>
@@ -79,7 +78,7 @@ const TelegramChatInterface = () => {
       </div>
     </div>
   );
-};
+}
 
 const FounderSection: React.FC = () => {
   return (
@@ -90,16 +89,16 @@ const FounderSection: React.FC = () => {
             <h2 className="font-montserrat font-bold text-3xl md:text-4xl mb-6">
               <span className="gradient-text">Основатель</span> и архитектор
             </h2>
-            
+
             <div className="text-xl font-medium mb-4">Всеволод</div>
             <div className="text-lg text-gray-700 dark:text-gray-300 mb-6">Архитектор систем</div>
-            
+
             <div className="mb-8">
               <blockquote className="text-lg md:text-xl italic border-l-4 border-ai-blue pl-4 py-2 text-gray-700 dark:text-gray-300">
                 "Я создаю не чат-ботов, а инструменты управления вниманием, действиями и деньгами."
               </blockquote>
             </div>
-            
+
             <div className="space-y-4 text-gray-700 dark:text-gray-300">
               <p>
                 Более 10 лет опыта в создании высокоэффективных бизнес-систем, которые не просто работают, а кратно увеличивают результативность команд.
@@ -108,7 +107,7 @@ const FounderSection: React.FC = () => {
                 С 2021 года сфокусирован на интеграции искусственного интеллекта в управленческие процессы розничного бизнеса.
               </p>
             </div>
-            
+
             <div className="mt-8">
               <Sheet>
                 <SheetTrigger asChild>
